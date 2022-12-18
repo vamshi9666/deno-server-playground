@@ -6,6 +6,7 @@
   "author": "vamshi9666@riseup.net <vamshi9666@riseup.net>",
   "license": "MIT",
   "dependencies": {
-    "autocannon": "^7.10.0"
+    "autocannon": "^7.10.0",
+    "got": "^12.5.3"
   }
 }
