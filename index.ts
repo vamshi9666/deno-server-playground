@@ -13,10 +13,11 @@ const rateLimit = RateLimiter({
   headers: true, // Default true, it will add the headers X-RateLimit-Limit, X-RateLimit-Remaining.
   message: "Too many requests, please try again later.", // Default message if rate limit reached.
   statusCode: 429, // Default status code if rate limit reached.
-  onRateLimit: (ctx, next) => {
-    // Callback when rate limit is reached.
-    console.log("Rate limit reached");
-  },
+  //   onRateLimit: (ctx, next) => {
+  //     // Callback when rate limit is reached.
+  //     console.log("Rate limit reached");
+
+  //   },
 });
 
 app.use(await rateLimit);
