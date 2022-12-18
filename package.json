@@ -1,0 +1,11 @@
+{
+  "name": "deno-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vamshi9666/deno-server-playground.git",
+  "author": "vamshi9666@riseup.net <vamshi9666@riseup.net>",
+  "license": "MIT",
+  "dependencies": {
+    "autocannon": "^7.10.0"
+  }
+}
