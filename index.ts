@@ -4,8 +4,8 @@ const app = new Application();
 
 // handle /spotify-login route
 app.use(async (ctx) => {
-  const client_id = process.env.CLIENT_ID;
-  const redirect_uri = process.env.REDIRECT_URI;
+  const client_id = Deno.env.get("CLIENT_ID");
+  const redirect_uri = Deno.env.get("REDIRECT_URI");
   const state = "some-state-of-my-choice";
   const url = new URL("https://accounts.spotify.com/authorize");
 
